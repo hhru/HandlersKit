@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E85A59C2757842000E2E940 /* CNContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A59B2757842000E2E940 /* CNContactViewController.swift */; };
+		8E85A59E2757854700E2E940 /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A59D2757854700E2E940 /* UIImagePickerController.swift */; };
+		8E85A5A02757858700E2E940 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A59F2757858700E2E940 /* UISearchBar.swift */; };
 		C42700C223F1877C007F32D1 /* HandlersKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42700B923F1877C007F32D1 /* HandlersKit.framework */; };
 		C427010823F18B02007F32D1 /* HandlersKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C427009F23F18686007F32D1 /* HandlersKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4462DD323F57EDB00F7F1E4 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C4462DD223F57EDB00F7F1E4 /* .travis.yml */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E85A59B2757842000E2E940 /* CNContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNContactViewController.swift; sourceTree = "<group>"; };
+		8E85A59D2757854700E2E940 /* UIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
+		8E85A59F2757858700E2E940 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		C427009F23F18686007F32D1 /* HandlersKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandlersKit.h; sourceTree = "<group>"; };
 		C42700A023F18686007F32D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C42700AC23F18686007F32D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -147,10 +153,13 @@
 		C4F561BA23F190E10081F7D1 /* HandlersKit */ = {
 			isa = PBXGroup;
 			children = (
+				8E85A59B2757842000E2E940 /* CNContactViewController.swift */,
 				C4F561BE23F190E10081F7D1 /* HandlersKit.swift */,
 				C4F561BC23F190E10081F7D1 /* UIBarButtonItem.swift */,
 				C4F561C023F190E10081F7D1 /* UIControl.swift */,
 				C4F561BB23F190E10081F7D1 /* UIGestureRecognizer.swift */,
+				8E85A59D2757854700E2E940 /* UIImagePickerController.swift */,
+				8E85A59F2757858700E2E940 /* UISearchBar.swift */,
 				C4F561BD23F190E10081F7D1 /* UITextField.swift */,
 				C4F561BF23F190E10081F7D1 /* UITextView.swift */,
 			);
@@ -305,8 +314,11 @@
 				C4F561C723F190E10081F7D1 /* HandlersKit.swift in Sources */,
 				C4F561C823F190E10081F7D1 /* UITextView.swift in Sources */,
 				C4F561C423F190E10081F7D1 /* UIGestureRecognizer.swift in Sources */,
+				8E85A5A02757858700E2E940 /* UISearchBar.swift in Sources */,
 				C4F561C623F190E10081F7D1 /* UITextField.swift in Sources */,
 				C4F561C923F190E10081F7D1 /* UIControl.swift in Sources */,
+				8E85A59C2757842000E2E940 /* CNContactViewController.swift in Sources */,
+				8E85A59E2757854700E2E940 /* UIImagePickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

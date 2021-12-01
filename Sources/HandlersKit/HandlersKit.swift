@@ -17,4 +17,14 @@ extension UIGestureRecognizer: HandlersKit, ObserverHolder { }
 
 extension UITextView: HandlersKit, ObserverHolder { }
 
+extension UIImagePickerController: HandlersKit, ObserverHolder { }
+
+extension UISearchBar: HandlersKit, ObserverHolder { }
+
+#endif
+
+#if canImport(ContactsUI)
+import ContactsUI
+
+extension CNContactViewController: HandlersKit, ObserverHolder { }
 #endif
