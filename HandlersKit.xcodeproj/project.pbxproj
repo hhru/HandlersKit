@@ -10,6 +10,9 @@
 		8E85A59C2757842000E2E940 /* CNContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A59B2757842000E2E940 /* CNContactViewController.swift */; };
 		8E85A59E2757854700E2E940 /* UIImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A59D2757854700E2E940 /* UIImagePickerController.swift */; };
 		8E85A5A02757858700E2E940 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A59F2757858700E2E940 /* UISearchBar.swift */; };
+		8E85A5A32757A54900E2E940 /* CNContactViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A5A12757A52400E2E940 /* CNContactViewControllerTests.swift */; };
+		8E85A5A62757A78900E2E940 /* UIImagePickerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A5A42757A77100E2E940 /* UIImagePickerControllerTests.swift */; };
+		8E85A5A82757D97300E2E940 /* UISearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A5A72757D97300E2E940 /* UISearchBarTests.swift */; };
 		C42700C223F1877C007F32D1 /* HandlersKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42700B923F1877C007F32D1 /* HandlersKit.framework */; };
 		C427010823F18B02007F32D1 /* HandlersKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C427009F23F18686007F32D1 /* HandlersKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4462DD323F57EDB00F7F1E4 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C4462DD223F57EDB00F7F1E4 /* .travis.yml */; };
@@ -41,6 +44,9 @@
 		8E85A59B2757842000E2E940 /* CNContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNContactViewController.swift; sourceTree = "<group>"; };
 		8E85A59D2757854700E2E940 /* UIImagePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerController.swift; sourceTree = "<group>"; };
 		8E85A59F2757858700E2E940 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
+		8E85A5A12757A52400E2E940 /* CNContactViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNContactViewControllerTests.swift; sourceTree = "<group>"; };
+		8E85A5A42757A77100E2E940 /* UIImagePickerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerTests.swift; sourceTree = "<group>"; };
+		8E85A5A72757D97300E2E940 /* UISearchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarTests.swift; sourceTree = "<group>"; };
 		C427009F23F18686007F32D1 /* HandlersKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandlersKit.h; sourceTree = "<group>"; };
 		C42700A023F18686007F32D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C42700AC23F18686007F32D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,12 +146,15 @@
 		C42700A923F18686007F32D1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8E85A5A12757A52400E2E940 /* CNContactViewControllerTests.swift */,
+				C42700AC23F18686007F32D1 /* Info.plist */,
 				C446283C23F2B43E00F7F1E4 /* LinuxMain.swift */,
 				C4F561CE23F194D20081F7D1 /* UIBarButtonItemTests.swift */,
 				C4F561CF23F194D20081F7D1 /* UIControlTests.swift */,
+				8E85A5A42757A77100E2E940 /* UIImagePickerControllerTests.swift */,
+				8E85A5A72757D97300E2E940 /* UISearchBarTests.swift */,
 				C4F561CC23F194D20081F7D1 /* UITextFieldTests.swift */,
 				C4F561CD23F194D20081F7D1 /* UITextViewTests.swift */,
-				C42700AC23F18686007F32D1 /* Info.plist */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -327,9 +336,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F561D023F194D20081F7D1 /* UITextFieldTests.swift in Sources */,
+				8E85A5A62757A78900E2E940 /* UIImagePickerControllerTests.swift in Sources */,
 				C4F561D323F194D20081F7D1 /* UIControlTests.swift in Sources */,
+				8E85A5A32757A54900E2E940 /* CNContactViewControllerTests.swift in Sources */,
 				C4F561D123F194D20081F7D1 /* UITextViewTests.swift in Sources */,
 				C4F561D223F194D20081F7D1 /* UIBarButtonItemTests.swift in Sources */,
+				8E85A5A82757D97300E2E940 /* UISearchBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
