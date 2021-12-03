@@ -13,6 +13,9 @@ def report_xcode_summary(platform:)
         file.puts JSON.pretty_generate(json)
     end
 
+    xcode_summary.ignores_warnings = false
+    xcode_summary.inline_mode = true
+
     xcode_summary.report(path)
 end
 
