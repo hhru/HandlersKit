@@ -1,5 +1,5 @@
 # HandlersKit
-[![Build Status](https://travis-ci.org/hhru/HandlersKit.svg?branch=master)](https://travis-ci.org/hhru/HandlersKit)
+[![Build Status](https://github.com/hhru/HandlersKit/workflows/CI/badge.svg?branch=main)](https://github.com/hhru/HandlersKit/actions)
 [![Codecov](https://codecov.io/gh/hhru/HandlersKit/branch/master/graph/badge.svg)](https://codecov.io/gh/hhru/HandlersKit)
 [![Cocoapods](https://img.shields.io/cocoapods/v/HandlersKit.svg?style=flat)](http://cocoapods.org/pods/HandlersKit)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
