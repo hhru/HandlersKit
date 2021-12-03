@@ -25,7 +25,7 @@ final class CNContactViewControllerTests: XCTestCase {
         // when
         contactViewController.delegate?.contactViewController?(contactViewController, didCompleteWith: expectedContact)
 
-        // than
+        // then
         XCTAssertEqual(handledContact, expectedContact)
     }
 
@@ -45,7 +45,7 @@ final class CNContactViewControllerTests: XCTestCase {
         // when
         contactViewController.delegate?.contactViewController?(contactViewController, didCompleteWith: CNContact())
 
-        // than
+        // then
         XCTAssertEqual(expectedCallCount, actualCallCount)
     }
 }

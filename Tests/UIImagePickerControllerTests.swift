@@ -11,7 +11,7 @@ import XCTest
 
 final class UIImagePickerViewControllerTests: XCTestCase {
 
-    func test_didFinishPickingMediaSelfHandler_whenDelegateTriggered_thaHandledObjectIsTheSame() {
+    func test_didFinishPickingMediaSelfHandler_whenDelegateTriggered_thatHandledObjectIsTheSame() {
         // given
         var handledImagePickerController: UIImagePickerController?
         var handledMediaInfo: [UIImagePickerController.InfoKey: Any]?
@@ -35,12 +35,12 @@ final class UIImagePickerViewControllerTests: XCTestCase {
                 didFinishPickingMediaWithInfo: expectedMediaInfo
             )
 
-        // than
+        // then
         XCTAssert(handledImagePickerController === imagePickerController)
         XCTAssertEqual(handledMediaInfo?[.cropRect] as? CGRect, expectedMediaInfo[.cropRect] as? CGRect)
     }
 
-    func test_didCancelSelfHandler_whenDelegateTriggered_thanHandledObjectIsTheSame() {
+    func test_didCancelSelfHandler_whenDelegateTriggered_thatHandledObjectIsTheSame() {
         // given
         var handledImagePickerController: UIImagePickerController?
 
@@ -53,7 +53,7 @@ final class UIImagePickerViewControllerTests: XCTestCase {
         // when
         imagePickerController.delegate?.imagePickerControllerDidCancel?(imagePickerController)
 
-        // than
+        // then
         XCTAssert(handledImagePickerController === imagePickerController)
     }
 
