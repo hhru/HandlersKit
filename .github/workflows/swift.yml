@@ -18,10 +18,10 @@ jobs:
     name: Build & Tests
     runs-on: macOS-latest
     env:
-      DEVELOPER_DIR: /Applications/Xcode_13.1.app/Contents/Developer
+      DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
       XCODE_PROJECT: HandlersKit.xcodeproj
       IOS_SCHEME: HandlersKit
-      IOS_DESTINATION: OS=15.0,name=iPhone 13
+      IOS_DESTINATION: OS=14.4,name=iPhone 12
       IOS_BUILD_LOG_PATH: xcodebuild-ios.json
       SKIP_SWIFTLINT: YES
       DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
