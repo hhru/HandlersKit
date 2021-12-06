@@ -15,7 +15,6 @@
 		8E85A5A82757D97300E2E940 /* UISearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A5A72757D97300E2E940 /* UISearchBarTests.swift */; };
 		C42700C223F1877C007F32D1 /* HandlersKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42700B923F1877C007F32D1 /* HandlersKit.framework */; };
 		C427010823F18B02007F32D1 /* HandlersKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C427009F23F18686007F32D1 /* HandlersKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4462DD323F57EDB00F7F1E4 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C4462DD223F57EDB00F7F1E4 /* .travis.yml */; };
 		C4F561C423F190E10081F7D1 /* UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F561BB23F190E10081F7D1 /* UIGestureRecognizer.swift */; };
 		C4F561C523F190E10081F7D1 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F561BC23F190E10081F7D1 /* UIBarButtonItem.swift */; };
 		C4F561C623F190E10081F7D1 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F561BD23F190E10081F7D1 /* UITextField.swift */; };
@@ -55,7 +54,6 @@
 		C446260623F1A19800F7F1E4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		C446260723F1A1A700F7F1E4 /* HandlersKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HandlersKit.podspec; sourceTree = "<group>"; };
 		C446283C23F2B43E00F7F1E4 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
-		C4462DD223F57EDB00F7F1E4 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		C4F561AE23F18BC40081F7D1 /* Brewfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Brewfile; sourceTree = "<group>"; };
 		C4F561AF23F18BC40081F7D1 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C4F561B023F18BC40081F7D1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				C4F561B523F18BC50081F7D1 /* .gitignore */,
 				C4F561B223F18BC40081F7D1 /* .ruby-version */,
 				C4F561B823F18BC50081F7D1 /* .swift-version */,
-				C4462DD223F57EDB00F7F1E4 /* .travis.yml */,
 				C4F561B623F18BC50081F7D1 /* .swiftlint.yml */,
 				C4F561AE23F18BC40081F7D1 /* Brewfile */,
 				C4F561B723F18BC50081F7D1 /* Dangerfile */,
@@ -278,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4462DD323F57EDB00F7F1E4 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +497,7 @@
 				PRODUCT_NAME = HandlersKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -575,6 +572,7 @@
 				PRODUCT_NAME = HandlersKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;

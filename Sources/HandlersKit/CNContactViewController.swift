@@ -4,7 +4,7 @@
 // MIT Licence
 //
 
-#if canImport(ContactsUI)
+#if canImport(ContactsUI) && os(iOS)
 import ContactsUI
 
 extension HandlersKit where Self: CNContactViewController {
