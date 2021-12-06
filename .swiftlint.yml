@@ -40,7 +40,6 @@ whitelist_rules:
   - empty_xctest_method
   - enum_case_associated_values_count
   - explicit_init
-  - no_extension_access_modifier
   - file_header
   - file_length
   - first_where
@@ -345,7 +344,7 @@ switch_case_alignment:
   indented_cases: false
 
 trailing_closure:
-  only_single_muted_parameter: true
+  only_single_muted_parameter: false
 
 trailing_comma:
   mandatory_comma: false
@@ -366,6 +365,7 @@ type_contents_order:
     - ib_inspectable
     - instance_property
     - initializer
+    - deinitializer
     - ib_action
     - other_method
     - view_life_cycle_method

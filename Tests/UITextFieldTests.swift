@@ -292,7 +292,7 @@ final class UITextFieldTests: XCTestCase {
         let textField = UITextField()
         textField
             .shouldReturn { false }
-            .on(.editingDidEnd, handler: { isEditingDidEndHandled = true })
+            .on(.editingDidEnd) { isEditingDidEndHandled = true }
 
         // when
         returnedValue = textField.delegate?.textFieldShouldReturn?(textField)

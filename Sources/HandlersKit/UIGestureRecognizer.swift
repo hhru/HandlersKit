@@ -27,7 +27,10 @@ extension HandlersKit where Self: UIGestureRecognizer {
 
     @discardableResult
     public func onRecognize(handler: @escaping () -> Void) -> Self {
-        observer = GestureRecognizerObserver(gestureRecognizer: self, handler: { _ in handler() })
+        observer = GestureRecognizerObserver(gestureRecognizer: self) { _ in
+            handler()
+        }
+
         return self
     }
 }
