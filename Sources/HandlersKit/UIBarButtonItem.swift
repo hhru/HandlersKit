@@ -67,7 +67,10 @@ extension HandlersKit where Self: UIBarButtonItem {
 
     @discardableResult
     public func onTap(handler: @escaping () -> Void) -> Self {
-        observer = BarButtonItemObserver(barButtonItem: self, handler: { _ in handler() })
+        observer = BarButtonItemObserver(barButtonItem: self) { _ in
+            handler()
+        }
+
         return self
     }
 }

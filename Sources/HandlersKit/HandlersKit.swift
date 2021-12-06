@@ -4,10 +4,10 @@
 // MIT Licence
 //
 
+public protocol HandlersKit { }
+
 #if canImport(UIKit)
 import UIKit
-
-public protocol HandlersKit { }
 
 extension UIControl: HandlersKit, ObserverHolder, EventsObserverHolder { }
 
@@ -20,10 +20,9 @@ extension UITextView: HandlersKit, ObserverHolder { }
 extension UIImagePickerController: HandlersKit, ObserverHolder { }
 
 extension UISearchBar: HandlersKit, ObserverHolder { }
-
 #endif
 
-#if canImport(ContactsUI)
+#if canImport(ContactsUI) && os(iOS)
 import ContactsUI
 
 extension CNContactViewController: HandlersKit, ObserverHolder { }

@@ -18,7 +18,9 @@ extension HandlersKit where Self: UIControl {
 
     @discardableResult
     public func on(_ event: UIControl.Event, handler: @escaping () -> Void) -> Self {
-        let observer = EventObserver(control: self, event: event, handler: { _ in handler() })
+        let observer = EventObserver(control: self, event: event) { _ in
+            handler()
+        }
         eventsObserver[event.rawValue] = observer
         return self
     }
