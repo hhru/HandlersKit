@@ -22,7 +22,7 @@ jobs:
       XCODE_PROJECT: HandlersKit.xcodeproj
       IOS_SCHEME: HandlersKit
       IOS_DESTINATION: OS=14.4,name=iPhone 12
-      IOS_BUILD_LOG_PATH: xcodebuild-ios.json
+      IOS_BUILD_LOG_PATH: Log/HandlersKit
       SKIP_SWIFTLINT: YES
       DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
     steps:
@@ -41,7 +41,7 @@ jobs:
           swift --version
       - name: Test iOS
         run: |
-          xcodebuild clean build test -project "$XCODE_PROJECT" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" | XCPRETTY_JSON_FILE_OUTPUT="$IOS_BUILD_LOG_PATH" xcpretty -f `xcpretty-json-formatter`
+          xcodebuild clean build test -project "$XCODE_PROJECT" -scheme "$IOS_SCHEME" -destination "$IOS_DESTINATION" -resultBundlePath "$IOS_BUILD_LOG_PATH"
           bash <(curl -s https://codecov.io/bash) -cF ios -J 'HandlersKit'
       - name: Danger
         run: bundle exec danger --remove-previous-comments
