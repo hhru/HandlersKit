@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "HandlersKit"
-  spec.version = "1.1.0"
+  spec.version = "1.1.1"
   spec.summary = "Swift closure-based actions and delegates to UIKit"
 
   spec.homepage = "https://github.com/hhru/HandlersKit"
