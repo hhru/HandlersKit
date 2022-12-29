@@ -4,8 +4,8 @@
 [![Cocoapods](https://img.shields.io/cocoapods/v/HandlersKit.svg?style=flat)](http://cocoapods.org/pods/HandlersKit)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
-[![Xcode](https://img.shields.io/badge/Xcode-11-blue.svg)](https://developer.apple.com/xcode)
-[![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
+[![Xcode](https://img.shields.io/badge/Xcode-13-blue)](https://developer.apple.com/xcode)
+[![Swift](https://img.shields.io/badge/Swift-5.5-orange)](https://swift.org)
 [![License](https://img.shields.io/github/license/hhru/HandlersKit.svg)](https://opensource.org/licenses/MIT)
 
 HandlersKit is a light-weight iOS Framework that allows you to use modern closure syntax instead of the target-action and delegate patterns. This framework covers the most popular UIKit classes.
@@ -53,6 +53,11 @@ textField.shouldChangeString { fromString, toString in
 ## Benefits
 - HandlersKit extends [UIControl](https://developer.apple.com/documentation/uikit/uicontrol), [UIBarButtonItem](https://developer.apple.com/documentation/uikit/uibarbuttonitem), [UIGestureRecognizer](https://developer.apple.com/documentation/uikit/uigesturerecognizer), [UITextField](https://developer.apple.com/documentation/uikit/uitextfield) and [UITextView](https://developer.apple.com/documentation/uikit/uitextview).
 - Closures stored as associated objects. No singleton or Notification Center used. It means that all objects captured by this closure will be released when that UIKit object released.
+
+## Requirements
+- iOS 12.0+ / tvOS 12.0+
+- Xcode 13.0+
+- Swift 5.5+
 
 ## Installation
 ### CocoaPods

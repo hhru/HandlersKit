@@ -8,10 +8,10 @@ Pod::Spec.new do |spec|
   spec.author = { "HeadHunter iOS Team" => "https://hh.ru" }
   spec.source = { :git => "https://github.com/hhru/HandlersKit.git", :tag => "#{spec.version}" }
 
-  spec.swift_version = '5.0'
+  spec.swift_version = '5.5'
   spec.requires_arc = true
   spec.source_files = 'Sources/**/*.swift'
 
   spec.ios.frameworks = 'UIKit'
-  spec.ios.deployment_target = "11.0"
+  spec.ios.deployment_target = "12.0"
 end

@@ -1,11 +1,11 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
     name: "HandlersKit",
     platforms: [
-        .iOS(.v11),
-        .tvOS(.v11)
+        .iOS(.v12),
+        .tvOS(.v12)
     ],
     products: [
         .library(
