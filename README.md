@@ -84,7 +84,7 @@ https://github.com/hhru/HandlersKit
 ```
 2. Or add the following as a dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/hhru/HandlersKit.git", from: "1.1.1")
+.package(url: "https://github.com/hhru/HandlersKit.git", from: "1.2.0")
 ```
 
 ### Manual
